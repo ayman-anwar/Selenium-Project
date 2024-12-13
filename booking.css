@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Logo Styling */
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Navigation Links Styling */
+.navbar .nav-links {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Individual Link Styling */
+.navbar .nav-link {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects for Links */
+.navbar .nav-link:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Active Link Styling */
+.navbar .nav-link.active {
+    background-color: #ff7e5f;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%; /* Ensure it takes full width */
+        text-align: center;
+    }
+
+    .navbar .nav-link {
+        padding: 10px;
+        width: 100%; /* Make the links full width on smaller screens */
+        text-align: center;
+    }
+}
+
+/* Booking Form Styling */
+.booking-container {
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.booking-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: #555;
+}
+
+input[type="text"], input[type="date"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f26b59;
+}
+
+.confirmation {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .booking-container {
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
